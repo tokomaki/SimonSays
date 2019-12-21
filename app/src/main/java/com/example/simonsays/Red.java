@@ -114,7 +114,7 @@ public class Red extends AppCompatActivity {
                 startActivity(intent);
             }
         }
-        else if (restart.getVisibility() != 0) {
+        else if (restart.getVisibility() != View.VISIBLE) {
             gameOver("gameOver", colorsList, count);
         }
     }
