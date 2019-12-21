@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class Yellow extends AppCompatActivity {
     private TextView title;
@@ -18,7 +19,7 @@ public class Yellow extends AppCompatActivity {
     private Button yellow;
     private Button blue;
     private Button restart;
-    private Class[] activities;
+    private Class[] activities = {Green.class, Red.class, Yellow.class, Blue.class};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +41,11 @@ public class Yellow extends AppCompatActivity {
         final ArrayList<String> colorsList = getIntent().getStringArrayListExtra("colors");
 
         // Update score
-        scoreCount.setText(score);
+        scoreCount.setText(String.format(Locale.US, "%d", score));
 
         // Update title text
         if (score != count) {
-            String temp = String.format("Color: %d", count + 1);
+            String temp = String.format(Locale.US, "Color: %d", count + 1);
             title.setText(temp);
         } else {
             String temp = String.format("Simon says %s", colorsList.get(count));
