@@ -105,7 +105,7 @@ public class Red extends AppCompatActivity {
                 gameOver("You Win!", colorsList, count);
             } else {
                 if (count == score) {
-                    count = -1;
+                    count--;
                     score++;
                 }
                 count++;
