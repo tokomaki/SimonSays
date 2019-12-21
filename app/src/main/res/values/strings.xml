@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Simon Says</string>
+    <string name="help">Help</string>
+    <string name="simon_says">Simon Says</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="start_game">Start Game</string>
+</resources>
