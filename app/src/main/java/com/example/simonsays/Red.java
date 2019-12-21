@@ -24,7 +24,7 @@ public class Red extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_green);
+        setContentView(R.layout.activity_red);
 
         // Retrieve mobile elements
         title = findViewById(R.id.appTitle);
